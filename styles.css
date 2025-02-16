@@ -4,6 +4,14 @@
     --dark: #2c3e50;
     --light: #ecf0f1;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212; /* Darker background */
+    color: #f5f5f5; /* Lighter text */
+}
 
 body {
     font-family: 'Roboto', sans-serif;
