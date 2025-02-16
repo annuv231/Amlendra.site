@@ -308,3 +308,33 @@ body {
         justify-content: center;
     }
 }
+
+/* Footer Styles */
+/* Footer Styles */
+.site-footer {
+    background: #1a1a1a;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 4rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.copyright {
+    color: var(--light);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.disclaimer {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
