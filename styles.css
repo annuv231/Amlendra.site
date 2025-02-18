@@ -1,17 +1,27 @@
 :root {
-    --primary: #2ecc71;
-    --secondary: #3498db;
-    --dark: #2c3e50;
-    --light: #ecf0f1;
+    --primary: #64ffda;    /* Modern mint green */
+    --secondary: #0a192f;  /* Dark blue */
+    --dark: #0a192f;
+    --light: #ccd6f6;
+    --lighter: #e6f1ff;
+    --background: #0a192f;
+    --card-bg: #112240;
+    --hover-bg: #233554;
 }
+
+/* Modern smooth scrolling and base styles */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
-    background-color: #121212; /* Darker background */
-    color: #f5f5f5; /* Lighter text */
+    background-color: var(--background);
+    color: var(--light);
+    font-family: 'Roboto', system-ui, sans-serif;
+    line-height: 1.7;
 }
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -116,7 +126,7 @@ body {
 }
 
 .timeline-date {
-    color: var(--secondary);
+    color: var(--primary);
     font-weight: 600;
     font-size: 1rem;
     background: rgba(52, 152, 219, 0.1);
