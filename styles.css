@@ -67,7 +67,34 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 6rem 2rem 2rem;
+    padding: 6rem 1rem 2rem; /* Reduced horizontal padding for mobile compatibility */
+    width: 100%; /* Ensures it takes full width within constraints */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .nav-links { display: none; } /* Add hamburger menu if desired */
+    .container { 
+        padding: 4rem 0.5rem 1rem; /* Further reduced horizontal padding for tablets */
+    }
+    .skills-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .skill-card { padding: 2rem; }
+    .tech-grid { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 1.2rem; }
+    .tech-item { padding: 1rem; }
+    .tech-item i { font-size: 2rem; margin-bottom: 0.6rem; }
+    .tech-item span { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+    .container { 
+        padding: 4rem 0.25rem 1rem; /* Minimal padding for phones */
+    }
+    .tech-grid { grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 1rem; }
+    .tech-item { padding: 0.8rem; }
+    .tech-item i { font-size: 1.8rem; }
+    .tech-item span { font-size: 0.85rem; }
 }
 
 /* Hero */
